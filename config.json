@@ -1,0 +1,22 @@
+{
+  "bank": {
+    "account_number": "ES00 0000 0000 0000 0000 0000",
+    "balance_eur": "0.00",
+    "toggle_key": "b"
+  },
+  "countdown": {
+    "label": "Target Date",
+    "date": "2027-10-24"
+  },
+  "weather": {
+    "latitude": 36.51,
+    "longitude": -4.88,
+    "city": "Marbella"
+  },
+  "thermal": {
+    "high_temp_c": 85,
+    "shutdown_delay_sec": 10,
+    "snooze_sec": 60
+  },
+  "task": "Complete current milestone"
+}

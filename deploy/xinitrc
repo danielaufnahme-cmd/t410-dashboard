@@ -1,0 +1,3 @@
+#!/bin/sh
+# Started by startx from ~/.profile on tty1.
+exec openbox-session

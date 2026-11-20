@@ -1,0 +1,7 @@
+# build output
+/t410dash
+*.o
+
+# local, may contain real account data
+/config.local.json
+*.tmp.*

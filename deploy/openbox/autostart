@@ -1,0 +1,12 @@
+# Openbox autostart for the t410dash kiosk user (sourced by openbox-session).
+
+# Never blank the screen or power down the panel.
+xset s off -dpms s noblank
+
+# Keep the dashboard running: restart it 2 s after it exits or crashes.
+(
+	while :; do
+		/usr/local/bin/t410dash "$HOME/.config/t410dash/config.json"
+		sleep 2
+	done
+) &

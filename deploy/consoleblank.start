@@ -1,0 +1,7 @@
+#!/bin/sh
+# /etc/local.d/consoleblank.start - disable Linux console blanking/powersave
+# on every VT (the X session itself is handled by xset in openbox/autostart).
+for t in /dev/tty1 /dev/tty2 /dev/tty3 /dev/tty4 /dev/tty5 /dev/tty6; do
+	[ -c "$t" ] && printf '\033[9;0]\033[14;0]' >"$t"
+done
+exit 0

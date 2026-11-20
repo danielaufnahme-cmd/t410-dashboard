@@ -1,0 +1,6 @@
+# ~/.profile for the t410dash kiosk user.
+# Start X automatically, but only on tty1 and only when X is not running yet.
+# Other consoles (Ctrl+Alt+F2 ...) stay normal login shells for maintenance.
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+	exec startx >"$HOME/.xsession.log" 2>&1
+fi
